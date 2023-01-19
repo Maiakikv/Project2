@@ -58,6 +58,8 @@ public class TestOne {
             softAssert.assertTrue(restPageData.getMinPrice() < price);
             softAssert.assertTrue(price < restPageData.getMaxPrice());
 
+            softAssert.assertAll();
+
         }
     }
 

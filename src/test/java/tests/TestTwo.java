@@ -71,6 +71,8 @@ public class TestTwo {
         System.out.println(firstResult + " " + secondResult);
 
         softAssert.assertTrue(firstResult > secondResult);
+        softAssert.assertAll();
+
 
 
     }
