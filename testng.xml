@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" parallel="tests" thread-count="2">
+
+    <test name="Resgression1">
+        <groups>
+            <run>
+                <include name="Resgression1"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.TestOne"></class>
+            <class name="tests.TestTwo"></class>
+        </classes>
+    </test>
+
+    <test name="Resgression2">
+        <groups>
+            <run>
+                <include name="Resgression2"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.TestThree"></class>
+        </classes>
+    </test>
+
+</suite>
