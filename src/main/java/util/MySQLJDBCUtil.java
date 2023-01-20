@@ -11,7 +11,7 @@ public class MySQLJDBCUtil {
     public static Connection getConnection() throws SQLException {
         Connection conn = null;
 
-        try (FileInputStream f = new FileInputStream("C:\\Users\\I3 - 9100\\IdeaProjects\\Project2\\src\\main\\resources\\db.properties")) {
+        try (FileInputStream f = new FileInputStream("src\\main\\resources\\db.properties")) {
 
             Properties pros = new Properties();
             pros.load(f);
