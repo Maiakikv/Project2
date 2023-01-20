@@ -1,6 +1,6 @@
 package SQLdata;
 
-import DDT.MySQLJDBCUtil;
+import util.MySQLJDBCUtil;
 
 import java.sql.*;
 
@@ -31,7 +31,6 @@ public class DataProvider {
         while (rs.next()) {
             for (int j = 0; j < cols; j++) {
                 data[i][j] = rs.getString(j + 1);
-                System.out.println(data[i][j]);
 
             }
             i++;

@@ -26,7 +26,6 @@ import static com.codeborne.selenide.Selenide.open;
 public class TestThree {
     @BeforeClass
     public static void setUp() {
-        closeWebDriver();
         Configuration.browser = Browsers.CHROME;
         Configuration.startMaximized = true;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
